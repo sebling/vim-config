@@ -23,6 +23,7 @@ Plugin 'VundleVim/Vundle.vim'  " let Vundle manage Vundle, required
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " -- Linters / Formatters --
 Plugin 'vim-scripts/indentpython.vim'
@@ -30,7 +31,8 @@ Plugin 'nvie/vim-flake8'
 Plugin 'w0rp/ale'
 
 " -- Code Completion --
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
+Plugin 'valloric/youcompleteme'
 
 " -- Language Syntax Highlighters --
 " Plugin 'scrooloose/syntastic'
@@ -231,6 +233,8 @@ let g:ansible_unindent_after_newline = 1    " auto reset indent after blank line
 let g:ansible_name_highlight = 'b'          " highlight play names
 let g:ansible_extra_keywords_highlight = 1  " highlight extra keywords beyong default
 
+" -- jedi-vim options --
+let g:jedi#auto_initialization = 1
 " -----------------------------------------------------------------
 "  End plugin options
 " -----------------------------------------------------------------
